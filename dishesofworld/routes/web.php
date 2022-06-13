@@ -16,3 +16,8 @@ use Illuminate\Support\Facades\Route;
 Route::get('/posts', function () {
     return view('posts.index');
 });
+
+Route::get('/jelo', function () {
+    return view('jelo.jelasvijeta');
+});
+

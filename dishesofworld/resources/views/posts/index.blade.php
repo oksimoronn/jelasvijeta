@@ -2,6 +2,7 @@
 
 @section('content')
 
-index
+
+<h1>Jela Svijeta</h1>
 
 @endsection
