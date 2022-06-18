@@ -7,6 +7,5 @@
     <title>Jela svijeta</title>
 </head>
 <body>
-    @yield('content')
 </body>
 </html>

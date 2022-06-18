@@ -1,6 +1,10 @@
 <?php
 
+use App\Http\Controllers\JelasController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\OrderController;
+
+
 
 /*
 |--------------------------------------------------------------------------
@@ -13,11 +17,14 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/posts', function () {
-    return view('posts.index');
+
+//Route::get('/jelo', [JelasController::class, 'index']);
+
+//Route::get('/jelo{perp}', [JelasController::class, 'perpage']);
+
+Route::controller(JelasController::class)->group(function (){
+    Route::get('jelas', 'home');
 });
 
-Route::get('/jelo', function () {
-    return view('jelo.jelasvijeta');
-});
+
 
